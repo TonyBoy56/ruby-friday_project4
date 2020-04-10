@@ -4,13 +4,27 @@ function Pizza() {
 }
 
 Pizza.prototype.sizePrice = function (size) {
-  if (size ===)
+  if (size === "1") {
+    this.cost += 5;
+  } else if (size === "2" ) {
+    this.cost += 8;
+  } else if (size === "3") {
+    this.cost += 11;
+  }
+  return this.cost;
+}
+
+Pizza.prototype.toppingsPrice = function (toppings) {
+
 }
 
 ////////////////// Front-end //////////////////
 $(document).ready(function() {
   $("#pizzaForm").submit(function(event) {
     event.preventDefault();
-    var theUsersSize = $("[name = size]").val();
+    let theUsersPizza = new Pizza();
+    let theUsersSize = $("[name = size]").val();
+    theUsersPizza.sizePrice(theUsersSize);
+
   });
 });
