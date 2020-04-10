@@ -15,7 +15,10 @@ Pizza.prototype.sizePrice = function (size) {
 }
 
 Pizza.prototype.toppingsPrice = function (toppings) {
-
+  if (toppings) {
+    this.cost += 1.50;
+  }
+  console.log(this.cost);
 }
 
 ////////////////// Front-end //////////////////
@@ -25,6 +28,9 @@ $(document).ready(function() {
     let theUsersPizza = new Pizza();
     let theUsersSize = $("[name = size]").val();
     theUsersPizza.sizePrice(theUsersSize);
-
+    $("input:checkbox[name = topping]:checked").each(function () {
+      var usersToppings = $(this).val();
+      theUsersPizza.toppingsPrice(usersToppings);
+    });
   });
 });
