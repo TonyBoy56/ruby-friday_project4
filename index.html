@@ -11,13 +11,15 @@
   <div class="container">
     <h1>Pick A Size!</h1>
     <form id="pizzaForm">
-      <div id="size" class="form-group">
+      <div id="size" class="col-sm-4">
         <select class="form-control" name="size" id="size">
           <option id="small" value="1">Small</option>
           <option id="medium" value="2">Medium</option>
           <option id="large" value="3">Large</option>
         </select>
       </div>
+      <hr>
+      <br>
       <div id="meat" class="form-group">
         <h3>How Can You have Any Pudding, If You Don't Eat Yer Meat?</h3>
         <input type="checkbox" name="topping" value="t1"> Pork <br>
@@ -26,6 +28,26 @@
         <input type="checkbox" name="topping" value="t1"> Steak <br>
         <input type="checkbox" name="topping" value="t1"> Pepperoni <br>
       </div>
+      <hr>
+      <div id="veggies" class="form-group">
+        <h3>Eat Your Veggies!</h3>
+        <input type="checkbox" name="topping" value="t1"> Sun-Dried Tomatoes <br>
+        <input type="checkbox" name="topping" value="t1"> Green Peppers <br>
+        <input type="checkbox" name="topping" value="t1"> Garlic Cloves <br>
+        <input type="checkbox" name="topping" value="t1"> Spinach <br>
+        <input type="checkbox" name="topping" value="t1"> Mushrooms <br>
+        <input type="checkbox" name="topping" value="t1"> Artichoke <br>
+      </div>
+      <hr>
+      <div>
+        <h3>Gotta Have Cheese!</h3>
+        <input type="checkbox" name="topping" value="t1"> Extra Medium-Cheddar <br>
+        <input type="checkbox" name="topping" value="t1"> Extra Sharp-Cheddar <br>
+        <input type="checkbox" name="topping" value="t1"> Extra Mozzerella <br>
+        <input type="checkbox" name="topping" value="t1"> No Cheese Whatsoever... <br>        
+      </div>
+      <br>
+      <button id="orderSubmit" class="btn btn-danger">Submit Your Order!</button>
     </form>
   </div>
 </body>
