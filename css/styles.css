@@ -3,3 +3,24 @@ body {
   color: whitesmoke;
 }
 
+#size {
+  background-color: violet;
+}
+
+#meat {
+  background-color: violet;
+  padding: auto;
+  margin: auto;
+}
+
+#veggies {
+  background-color: violet;
+  padding: auto;
+  margin: auto;
+}
+
+#cheese {
+  background-color: violet;
+  padding: auto;
+  margin: auto;
+}
