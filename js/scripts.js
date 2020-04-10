@@ -18,9 +18,13 @@ Pizza.prototype.toppingsPrice = function (toppings) {
   if (toppings) {
     this.cost += 1.50;
   }
-  console.log(this.cost);
+  return this.cost;
 }
 
+Pizza.prototype.total = function () {
+  let total = this.cost;
+  return total;
+}
 ////////////////// Front-end //////////////////
 $(document).ready(function() {
   $("#pizzaForm").submit(function(event) {
@@ -29,8 +33,10 @@ $(document).ready(function() {
     let theUsersSize = $("[name = size]").val();
     theUsersPizza.sizePrice(theUsersSize);
     $("input:checkbox[name = topping]:checked").each(function () {
-      var usersToppings = $(this).val();
+      let usersToppings = $(this).val();
       theUsersPizza.toppingsPrice(usersToppings);
     });
+    let usersTotal = theUsersPizza.total();
+    $("#output").text("Your total for this order is: $" + usersTotal);
   });
 });
