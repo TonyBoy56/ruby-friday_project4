@@ -45,6 +45,15 @@ _If you would like to view this project locally... :_
   * Input: _submit_
   * Output: "You're total for this order is $"
 
+* Display previous orders
+  * Input: Click "Yes, order another"
+  * Output: Refresh page with div tracking their last order.
+
+* Give the user an option to place another order
+  * Input: Click "Yes, order another"
+  * Output: Save previous order, refresh form.
+
+
 ## Known Bugs
 
 No known issues as of 04/10/2020
