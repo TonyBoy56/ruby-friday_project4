@@ -26,6 +26,15 @@ Pizza.prototype.total = function () {
   return total;
 }
 ////////////////// Front-end //////////////////
+
+// function to check for order details //
+
+// function checkForOrderSubmit(usersTotal) {
+//   if ($("#orderSubmit")) {
+//     $("#ordersList").append("<li>" + usersTotal + "</li>");
+//   }
+// }
+
 $(document).ready(function() {
   $("#pizzaForm").submit(function(event) {
     event.preventDefault();
@@ -38,5 +47,8 @@ $(document).ready(function() {
     });
     let usersTotal = theUsersPizza.total();
     $("#output").text("Your total for this order is: $" + usersTotal);
+    // checkForOrderSubmit(usersTotal);
+    // console.log(checkForOrderSubmit(usersTotal));
+    // $("#output").append(". Would you like to place another order?")
   });
 });
