@@ -29,7 +29,21 @@ _If you would like to view this project locally... :_
 
 ## Specs
 
-[INSERT SPECS HERE]
+* Pizza size options are accessible
+  * Input: Click drop down box for different sizes.
+  * Output: Pizza size is selected and instantiated.
+
+* Pizza-toppings are provided as select-boxes
+  * Input: Click desired toppings
+  * Output: Clicked toppings are stored for this order.
+
+* Toppings prototypes are saved onto the user's object.
+  * Input: _submit_
+  * Output: toppings are saved.
+
+* Total price is displayed at the bottom after submission
+  * Input: _submit_
+  * Output: "You're total for this order is $"
 
 ## Known Bugs
 
